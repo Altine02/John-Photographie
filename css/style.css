@@ -1,0 +1,158 @@
+.galerie{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 100px;
+    padding: 20px;
+}
+.galerie img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+.galerie img:hover{
+    transform: scale(1.05);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2022/08/07/02/51/nikon-camera-7369697_640.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.introduction {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.introduction h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+      nav div {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .header-page {
+  background-color: #222;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.apropos-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 40px;
+  align-items: center;
+}
+
+.apropos-photo {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.apropos-photo img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.apropos-texte {
+  flex: 2 1 400px;
+}
+
+.apropos-texte h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.apropos-texte p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.services-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.prix {
+  font-weight: bold;
+  color: #555;
+  font-size: 1.1em;
+}
